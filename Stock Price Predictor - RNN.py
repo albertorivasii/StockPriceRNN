@@ -106,3 +106,19 @@ test_RMSE = np.sqrt(mean_squared_error(Y_test, yhat_test))
 
 print('Train RMSE is: ' + str(train_RMSE))
 print('Test RMSE is: ' + str(test_RMSE))
+
+# visualize models with seaborn and matplotlib
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# data cleanup to recreate Date column and original close data
+aapl = pd.read_csv('Apple_Price_Model\AAPL.csv')
+aapl = aapl[['Date', 'Close']]
+whole_model = np.hstack((yhat_train, yhat_test))
+
+# viz creation and customization
+sns.set_style('darkgrid')
+sns.lineplot(data=aapl, x='Date', y='Close', color='b', label='Actual')
+sns.lineplot(whole_model, color='r', label='Predicted').set(title='Apple Stock Price vs Predicted', ylabel='Close Price')
+plt.legend()
+plt.show()
