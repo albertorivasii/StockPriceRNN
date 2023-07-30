@@ -6,7 +6,5 @@ Overall happy with how it came out.  I am glad I have some experience with machi
 
 ## Possibilities for Improvement:
 - Adjust Dropout levels to try and look for over/undertuning
-- Look for another RNN and see if that fits the data better
-- Try this with the entirety of AAPL's life span on NASDAQ
-- compute more epochs, RMSE went down by about 3 after running it 8 times or so.
 - Figure out why adding another LMST layer decreased model accuracy.  Maybe it is just not necessary.
+- Create many to one model instead of one to one model using other variables such as open, change, and (adjusted) volume
