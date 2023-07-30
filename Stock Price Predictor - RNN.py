@@ -64,10 +64,6 @@ model = Sequential()
 model.add(LSTM(units = 50, activation = 'relu',             # return_sequences = True
     input_shape = (X_train.shape[1], window_size)))
 model.add(Dropout(0.2))     # try to prevent overfitting
-
-# add additional model layer
-# model.add(LSTM(units = 50, activation = 'relu'))
-# model.add(Dropout(0.2))
  
 # output layer
 model.add(Dense(1))
