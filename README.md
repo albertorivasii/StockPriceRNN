@@ -9,3 +9,4 @@ Overall happy with how it came out.  I am glad I have some experience with machi
 - Look for another RNN and see if that fits the data better
 - Try this with the entirety of AAPL's life span on NASDAQ
 - compute more epochs, RMSE went down by about 3 after running it 8 times or so.
+- Figure out why adding another LMST layer decreased model accuracy.  Maybe it is just not necessary.
