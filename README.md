@@ -8,5 +8,5 @@ Overall happy with how it came out.  I am glad I have some experience with machi
 
 ## Possibilities for Improvement:
 - Adjust Dropout levels to try and look for over/undertuning
-- Try adding more variables to the model (e.g. open price, (adjusted) volume, etc.)
+- Add more variables to the model (e.g. open price, (adjusted) volume, etc.)
 - Create many to one model instead of one to one model using other variables such as open, change, and (adjusted) volume
